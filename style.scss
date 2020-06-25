@@ -1,0 +1,192 @@
+.app {
+  min-width: 1920px;
+  height: 1104px;
+  background: #000;
+}
+
+.container {
+  width: 1794px;
+  margin: auto;
+  font-size: 20px;
+  font-family: MadeBoldSans;
+}
+
+/* Header */
+
+.header {
+  height: 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #f7f5f9;
+
+  &__img-title {
+    width: 200px;
+  }
+
+  &__right-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 359px;
+  }
+
+  &__right-block-shoping-bag {
+    width: 28px;
+    height: 28px;
+  }
+
+  &__img-red-circle {
+    position: absolute;
+    top: -12px;
+    right: 100px;
+  }
+
+  &__counter-shoping-bag {
+    position: absolute;
+    top: -9px;
+    right: 109px;
+    font-size: 12px;
+    color: #e50012;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 403px;
+
+  &__img-burger {
+    width: 60px;
+    height: 18px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    width: 284px;
+  }
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+  width: 56px;
+
+  &__language {
+    width: 24px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__language_active {
+    color: #f7f5f9;
+  }
+}
+
+/* Game List */
+
+.game-list {
+  display: flex;
+  justify-content: space-between;
+  color: #f7f5f9;
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  &__item,
+  &__item-img,
+  &__item-mask {
+    width: 351px;
+    height: 800px;
+  }
+
+  &__item-text-block,
+  &__item-mask {
+    position: absolute;
+  }
+
+  &__item-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 246px;
+    height: 120px;
+    left: 60px;
+    bottom: 50px;
+  }
+
+  &__item-title { 
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__item-subtitle {
+    display: flex;
+  }
+
+  &__item-text {
+    margin-right: 11px;
+    font-family: MadeLightSans;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__two-masks-img {
+    width: 23px;
+  }
+
+  &__item-mask {
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%);
+  }
+}
+
+/* Discount */
+
+.discount {
+  position: absolute;
+  top: 28px;
+  left: -4px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 359px;
+  height: 82px;
+  
+
+  color: #f7f5f9;
+  background-image: url('./img/bg-discount.svg');
+
+
+  &__title {
+    margin-left: 18px;
+    font-family: Morganite-bold;
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  &__text {
+    margin-right: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__text-limit {
+    font-family: MadeLightSans;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__text-time {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
